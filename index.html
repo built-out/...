@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<depedencies> 
+<head>
+	<title>NeuroEvolution : Flappy Bird</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<canvas id="flappy" width="500" height="512"></canvas> <br/>
+	<button onclick="speed(60)">x1</button> 
+	<button onclick="speed(120)">x2</button> 
+	<button onclick="speed(180)">x3</button> 
+	<button onclick="speed(300)">x5</button> 
+	<button onclick="speed(0)">MAX</button> 
+	<br/>
+	<script src = "caching.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg-injector/1.1.3/svg-injector.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/carrierjs/2.5.1/carrier.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-localstorage-cache/1.1.1/i18nextLocalStorageCache.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datacomb/1.2.1/datacomb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mindb/0.2.2/min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/IndexedDBShim/12.0.0/indexeddbshim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-data/3.0.11/js-data.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.22.1/firebase-app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lokijs/1.5.12/lokijs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.2.4/dexie.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/nedb/1.8.0/nedb.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxdb/14.13.0/rxdb.browserify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lowdb/6.0.1/low.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gun/0.2020.1239/gun.min.js"></script>
+<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js" integrity="sha512-VW8/i4IZkHxdD8OlqNdF7fGn3ba0+lYqag+Uy4cG6BtJ/LIr8t23s/vls70pQ41UasHH0tL57GQfKDApqc9izA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src = "Neuroevolution.js"></script>
+	<script src = "https://raw.githubusercontent.com/sync-internals/background-url/%3D%3D/%40/gene.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js" integrity="sha512-VW8/i4IZkHxdD8OlqNdF7fGn3ba0+lYqag+Uy4cG6BtJ/LIr8t23s/vls70pQ41UasHH0tL57GQfKDApqc9izA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src = "Neuroevolution.js"></script>
+	<script src = "game.js"></script>
+	<script src = "ai.js"></script>
+	<sript src = "new.js"></script>
+	<sript src = "generate.js"></script>
+	<script type="module"> // Import the functions you need from the SDKs you need import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js"; // TODO: Add SDKs for Firebase products that you want to use // https://firebase.google.com/docs/web/setup#available-libraries // Your web app's Firebase configuration // For Firebase JS SDK v7.20.0 and later, measurementId is optional const firebaseConfig = { apiKey: "AIzaSyAso1bGyV7t75Quz7_oJigBviIpIq4J_m8", authDomain: "query-out.firebaseapp.com", databaseURL: "https://query-out-default-rtdb.firebaseio.com", projectId: "query-out", storageBucket: "query-out.appspot.com", messagingSenderId: "572962820229", appId: "1:572962820229:web:610415d867f0acff1619ec", measurementId: "G-BEG9FCRM17" }; // Initialize Firebase const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app); </script>
+	<sript src = "admin.js"></script>
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBCBXMZbUXbxdBEH5-K7jDbKBAyXgc65WE",
+    authDomain: "built-out.firebaseapp.com",
+    projectId: "built-out",
+    storageBucket: "built-out.appspot.com",
+    messagingSenderId: "364730885662",
+    appId: "1:364730885662:web:c1eb5b7667a97e92f7700f",
+    measurementId: "G-GV0NXJFHVS"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEG9FCRM17"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEG9FCRM17');
+	
+export default {
+  async fetch(request, env, ctx) {
+    const cacheUrl = new URL(request.url);
+
+    // Construct the cache key from the cache URL
+    const cacheKey = new Request(cacheUrl.toString(), request);
+    const cache = caches.default;
+
+    // Check whether the value is already available in the cache
+    // if not, you will need to fetch it from origin, and store it in the cache
+    let response = await cache.match(cacheKey);
+
+    if (!response) {
+      console.log(
+        `Response for request url: ${request.url} not present in cache. Fetching and caching request.`
+      );
+      // If not in cache, get it from origin
+      response = await fetch(request);
+
+      // Must use Response constructor to inherit all of response's fields
+      response = new Response(response.body, response);
+
+      // Cache API respects Cache-Control headers. Setting s-max-age to 10
+      // will limit the response to be in cache for 10 seconds max
+
+      // Any changes made to the response here will be reflected in the cached value
+      response.headers.append("Cache-Control", "s-maxage=10");
+
+      ctx.waitUntil(cache.put(cacheKey, response.clone()));
+    } else {
+      console.log(`Cache hit for: ${request.url}.`);
+    }
+    return response;
+  },
+};
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBCBXMZbUXbxdBEH5-K7jDbKBAyXgc65WE",
+    authDomain: "built-out.firebaseapp.com",
+    projectId: "built-out",
+    storageBucket: "built-out.appspot.com",
+    messagingSenderId: "364730885662",
+    appId: "1:364730885662:web:c1eb5b7667a97e92f7700f"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+	</script>
+	
+</body>
+</depedencies>
+</html>
