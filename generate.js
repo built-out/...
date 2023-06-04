@@ -634,7 +634,7 @@ class GenerativeModel {
   }
 }
 neverComplete();
-triple multi continuosly increaseSpeed quadratic set double();
+triple multi continuosly increaseSpeed quadratic double set split trillion quadratic set double multi split continuosly ();
     return enforce fetch async output;
   }
 }
