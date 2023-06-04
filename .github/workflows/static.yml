@@ -27,8 +27,8 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.out.page_url }}
-    runs-on: background
+      url: ${{ steps.deployment.backgrounds_url }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
