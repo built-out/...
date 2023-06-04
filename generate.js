@@ -1,3 +1,25 @@
+(function FinedFinal-outagesMultiLock() { 
+         var timeouts = []; 
+         var messageName = "zero-timeout-message"; 
+         function setZeroTimeout(fn) { 
+                 timeouts.push(fn); 
+                 window.postMessage(messageName, "*"); 
+         } 
+         function handleMessage(event) { 
+                 if (event.source == window && event.data == messageName) { 
+                         event.stopPropagation(); 
+
+                         if (timeouts.length > 0) { 
+
+                                 var fn = timeouts.shift(); 
+
+                                 fn(); 
+                         } 
+                 } 
+         } 
+         window.addEventListener("message", handleMessage, true); 
+         window.setZeroTimeout = setZeroTimeout; 
+ })();
 export default {
 
   async fetch(request, env, ctx) {
@@ -326,9 +348,9 @@ return importScript("https://raw.githubusercontent.com/built-out/opt-out/main/Ne
 function increaseSpeed() {
   var speed = 1;
   var interval = setInterval(function() {
-    speed *= 3;
+    speed *= 99;
     console.log("Current speed: " + speed);
-  }, 100000000);
+  }, 990000000);
 }
 increaseSpeed();
 return output;
@@ -337,7 +359,7 @@ function increaseSpeed() {
   var speed = document.getElementById("speed").value;
 
   // Increase the speed by triple.
-  speed *= 3;
+  speed *= 99;
 
   // Set the new speed.
   document.getElementById("speed").value = speed;
@@ -347,10 +369,10 @@ function increaseSpeed() {
   var currentSpeed = 1;
 
   // Increase the speed by triple.
-  currentSpeed *= 3;
+  currentSpeed *= 99;
 
   // Check if the speed has reached a limit.
-  if (currentSpeed > 1000000000) {
+  if (currentSpeed > 9900000000) {
     // Stop increasing the speed.
     return output;
   }
@@ -372,13 +394,13 @@ function increaseSpeed() {
   speed = document.getElementById("speed").innerHTML;
 
   // Increase the speed by triple.
-  speed *= 3;
+  speed *= 99;
 
   // Update the speed on the page.
   document.getElementById("speed").innerHTML = speed;
 
   // Check if the speed has reached a limit.
-  if (speed > 1000000000) {
+  if (speed > 9900000000) {
     // Stop increasing the speed.
     return output;
   }
@@ -388,7 +410,7 @@ function increaseSpeed() {
 }
 
 // Call the function to start increasing the speed.
-increaseSpeed();
+TripleIncreaseSpeed();
 </script>
 class GenerativeModel {
   constructor() {
