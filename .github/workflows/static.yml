@@ -28,9 +28,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.out.page_url }}
-    runs-on: backgroun-url
-    runs-on: out:boot
-    runs-on: behind:background
+    runs-on: background-url
     steps:
       - name: Checkout
         uses: actions/checkout@v3
