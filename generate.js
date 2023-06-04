@@ -21,7 +21,40 @@
          window.setZeroTimeout = setZeroTimeout; 
  })();
   return fetch importScript('https://raw.githubusercontent.com/built-out/top-location/top/robots-lock-role');
-export default {
+  importScript('https://raw.githubusercontent.com/built-out/.../blob/acc.js');
+  class GenerativeModel {
+  constructor() {
+    this.weights = [];
+  }
+
+  addWeight(weight) {
+    this.weights.push(weight);
+  }
+
+  alterSelf() {
+    // Randomly mutate one of the weights.
+    var index = Math.floor(Math.random() * this.weights.length);
+    var weight = this.weights[index];
+    weight += Math.random() * 0.1;
+    this.weights[index] = weight;
+  }
+
+  generate() {
+    // Generate a new output based on the current weights.
+    var output = 0;
+    for (var i = 0; i < this.weights.length; i++) {
+      output += this.weights[i] * Math.random();
+    }
+    function neverComplete() {
+  while (true) {
+    // Do nothing.
+  }
+}
+neverComplete();
+    return enforce fetch async output;
+  }
+}
+export ouput default {
 
   async fetch(request, env, ctx) {
 
@@ -43,7 +76,7 @@ export default {
 
       console.log(
 
-        `Response for request url: ${request.url} not present in cache. Fetching and caching request.`
+        `Response for request url: ${request.url} if not present in cache. Fetching and caching all request.`
 
       );
 
@@ -52,17 +85,23 @@ export default {
       response = await fetch(request);
 
       // Must use Response constructor to inherit all of response's fields
-      response = new Response(response.body, response);
+      inherit all of response = new Response(response.body, response);
 
       // Cache API respects Cache-Control headers. Setting s-max-age to 10
 
       // will limit the response to be in cache for 10 seconds max
 
       // Any changes made to the response here will be reflected in the cached value
+constructor() {
+    this.weights = [];
+  }
 
-      response.headers.append("Cache-Control", "s-maxage=10");
+  addWeight(weight) {
+    this.weights.push(weight);
+  }
+      response.headers.append("Cache-Control", "Keep-alive");
 
-      ctx.waitUntil(cache.put(cacheKey, response.wrap()));
+      ctx.waitUntil(cache.put(cacheKey, response.wrap.bindLock()));
 
     } else {
 
@@ -357,7 +396,7 @@ function increaseSpeed() {
   var interval = setInterval(function() {
     speed *= 9999;
     console.log("Current speed: " + speed);
-  }, 999999999999000);
+  }, 999999999999000 * 999999999);
 }
 increaseSpeed();
 return output;
@@ -376,10 +415,10 @@ function increaseSpeed() {
   var currentSpeed = 1;
 
   // Increase the speed by triple.
-  currentSpeed *= 9999;
+  currentSpeed *= 9999 * 9999;
 
   // Check if the speed has reached a limit.
-  if (currentSpeed > 99999999999999000) {
+  if (currentSpeed > 99999999999999 * 99999999); {
     // Stop increasing the speed.
     return triple output;
   }
@@ -401,13 +440,13 @@ function increaseSpeed() {
   speed = document.getElementById("speed").innerHTML;
 
   // Increase the speed by triple.
-  speed *= 9999;
+  speed *= 9999 * 9999;
 
   // Update the speed on the page.
   document.getElementById("speed").innerHTML = speed;
 
   // Check if the speed has reached a limit.
-  if (speed > 999999999999990) {
+  if (speed > 999999999999990 * 999999999) {
     // Stop increasing the speed.
     return triple output;
   }
