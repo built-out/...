@@ -29,7 +29,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.out.page_url }}
     runs-on: backgroun-url
-    runs-on: root:main
     runs-on: out:boot
     runs-on: behind:background
     steps:
