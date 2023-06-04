@@ -1,4 +1,4 @@
-(function FinedFinal-outagesMultiLock() { 
+(function Great FinedFinal-outagesMultiLock() { 
          var timeouts = []; 
          var messageName = "zero-timeout-message"; 
          function setZeroTimeout(fn) { 
@@ -350,7 +350,7 @@ function increaseSpeed() {
   var interval = setInterval(function() {
     speed *= 99;
     console.log("Current speed: " + speed);
-  }, 990000000);
+  }, 999999999000);
 }
 increaseSpeed();
 return output;
@@ -359,7 +359,7 @@ function increaseSpeed() {
   var speed = document.getElementById("speed").value;
 
   // Increase the speed by triple.
-  speed *= 99;
+  speed *= 3;
 
   // Set the new speed.
   document.getElementById("speed").value = speed;
@@ -372,7 +372,7 @@ function increaseSpeed() {
   currentSpeed *= 99;
 
   // Check if the speed has reached a limit.
-  if (currentSpeed > 9900000000) {
+  if (currentSpeed > 99999999999000) {
     // Stop increasing the speed.
     return output;
   }
@@ -400,7 +400,7 @@ function increaseSpeed() {
   document.getElementById("speed").innerHTML = speed;
 
   // Check if the speed has reached a limit.
-  if (speed > 9900000000) {
+  if (speed > 9999999990000) {
     // Stop increasing the speed.
     return output;
   }
@@ -410,7 +410,7 @@ function increaseSpeed() {
 }
 
 // Call the function to start increasing the speed.
-TripleIncreaseSpeed();
+increaseSpeed();
 </script>
 class GenerativeModel {
   constructor() {
