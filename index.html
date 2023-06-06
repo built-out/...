@@ -70,8 +70,26 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-BEG9FCRM17');
-	
+  gtag('config', 'G-BEG9FCRM17');	
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC4ZF5KcXXKXVR0r6q3eVqyAzfX-Yli5kI",
+    authDomain: "built-behind.firebaseapp.com",
+    projectId: "built-behind",
+    storageBucket: "built-behind.appspot.com",
+    messagingSenderId: "320510582831",
+    appId: "1:320510582831:web:b358869d64d270ec9926da"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 export default {
   async fetch(request, env, ctx) {
     const cacheUrl = new URL(request.url);
