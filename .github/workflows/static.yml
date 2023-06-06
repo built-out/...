@@ -27,7 +27,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.backgrounds_url }}
+      url: ${{ steps.deployment.behind.ackgrounds_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: 'out'
+          path: 'built-out'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
