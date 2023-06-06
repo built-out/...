@@ -2,6 +2,11 @@ ENDLESS_UP_AND_DOWN=/
 ENDLESS_OUT_AND_IN=/
 lookalike
 behind_task
+behind.background_streams
+behind.background_streaming
+behind.background_#
+behind.background_$
+behind.background_GPT
 behind_deployments
 behind_workers
 behind.background
