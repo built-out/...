@@ -4,6 +4,13 @@ lookalike
 behind_task
 behind_deployments
 behind_workers
+built_behind_vscode
+vscode-remote
+background_vscode-remote
+step_behind_vscode-remote
+step_background_vscode_remote
+behind_vscode-remote
+background_vscode_remote
 background:s://g
 background_s://g
 background:opt_out
