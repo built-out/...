@@ -27,7 +27,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.behind.ackgrounds_.com }}
+      url: ${{ steps.deployment.behind.backgrounds_.com }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
