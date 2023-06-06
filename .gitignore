@@ -1,6 +1,9 @@
 ENDLESS_UP_AND_DOWN=/
 ENDLESS_OUT_AND_IN=/
 lookalike
+behind_task
+behind_deployments
+behind_workers
 background:s://g
 background_s://g
 background:opt_out
