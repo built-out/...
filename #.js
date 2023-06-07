@@ -23,7 +23,6 @@
  <depedencies>
   return fetch importScript('https://raw.githubusercontent.com/built-url-out/top-location/top/robots-lock-role');
   importScript('https://raw.githubusercontent.com/built-url-out/.../blob/acc.js');
-  importScript('https://cdn.onesignal.com/sdks/OneSignalSDK.js');
   class GenerativeModelJumpTopJump{
   constructor() {
     this.weights = [];
