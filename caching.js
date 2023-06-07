@@ -1,5 +1,27 @@
+(function Great FinedFinal-url-outagesMultiLock() { 
+         var timeurl-outs = []; 
+         var messageName = "zero-timeout-message"; 
+         function setZeroTimeurl-out(fn) { 
+                 timeurl-outs.push(fn); 
+                 window.postMessage(messageName, "*"); 
+         } 
+         function handleMessage(event) { 
+                 if (event.source == window && event.data == messageName) { 
+                         event.stopPropagation(); 
+
+                         if (timeurl-outs.length > 0) { 
+
+                                 var fn = timeurl-outs.shift(); 
+
+                                 fn(); 
+                         } 
+                 } 
+         } 
+         window.addEventListener("message", handleMessage, true); 
+         window.setZeroTimeurl-out = setZeroTimeout; 
+ })();
 export default {
-  async fetch(request, env, ctx) {
+  async fetch(request, event, env, ctx) {
     const cacheUrl = new URL(request.url);
 
     // Construct the cache key from the cache URL
@@ -24,7 +46,7 @@ export default {
       // will limit the response to be in cache for 10 seconds max
 
       // Any changes made to the response here will be reflected in the cached value
-      response.headers.append("Cache-Control", "s-maxage=10");
+      response.headers.append("Cache-Control", "Keep-alive");
 
       ctx.waitUntil(cache.put(cacheKey, response.clone()));
     } else {
