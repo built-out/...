@@ -1,4 +1,4 @@
-# ...- 👋 Hi, I'm @owner
+- 👋 Hi, I'm @owner
 - 👀 I'm interested in ... ruling outline out of limits
 - 🌱 I'm currently learning ... ruling outline out of limits
 - 💞️ I'm looking to collaborate on ... ruling outline out of limits
